@@ -4,82 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ana Clara | Portfólio</title>
-
     <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Mulish:wght@300;400;600;700&display=swap"
-      rel="stylesheet"
-    />
-
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Mulish:wght@300;400;600;700&display=swap" rel="stylesheet" />
     <style>
-      :root {
-        --bg: #f3f4f6;
-        --text: #374151;
-      }
-
-      body {
-        font-family: 'Mulish', sans-serif;
-        background-color: var(--bg);
-        color: var(--text);
-      }
-
-      h1,
-      h2,
-      h3 {
-        font-family: 'Libre Baskerville', serif;
-      }
-
-      /* Efeito de granulado em 50% */
-      .grain {
-        position: fixed;
-        inset: 0;
-        pointer-events: none;
-        z-index: 1;
-        opacity: 0.5;
-        mix-blend-mode: multiply;
-        background-image: radial-gradient(circle, rgba(0, 0, 0, 0.07) 0.7px, transparent 1px),
-          radial-gradient(circle, rgba(0, 0, 0, 0.05) 0.7px, transparent 1px);
-        background-size: 3px 3px, 5px 5px;
-        background-position: 0 0, 14px 12px;
-      }
-
-      /* 3 elipses radiais desfocadas (blur 202.9px) */
-      .orb {
-        position: fixed;
-        width: 24rem;
-        height: 17rem;
-        border-radius: 9999px;
-        filter: blur(202.9px);
-        opacity: 0.3;
-        pointer-events: none;
-        z-index: 0;
-      }
-
-      .orb-1 {
-        top: -5rem;
-        left: -5rem;
-        background: #ffaa06;
-      }
-
-      .orb-2 {
-        top: 38%;
-        right: -8rem;
-        background: #e91e63;
-      }
-
-      .orb-3 {
-        bottom: -7rem;
-        left: 24%;
-        background: #4a148c;
-      }
-
-      .soft-card {
-        background: #ffffffee;
-        border: 1px solid #f3f4f6;
-      }
+      :root { --bg: #f3f4f6; --text: #374151; }
+      body { font-family: 'Mulish', sans-serif; background-color: var(--bg); color: var(--text); }
+      h1, h2, h3 { font-family: 'Libre Baskerville', serif; }
+      .grain { position: fixed; inset: 0; pointer-events: none; z-index: 1; opacity: 0.5; mix-blend-mode: multiply; background-image: radial-gradient(circle, rgba(0, 0, 0, 0.07) 0.7px, transparent 1px), radial-gradient(circle, rgba(0, 0, 0, 0.05) 0.7px, transparent 1px); background-size: 3px 3px, 5px 5px; background-position: 0 0, 14px 12px; }
+      .orb { position: fixed; width: 24rem; height: 17rem; border-radius: 9999px; filter: blur(202.9px); opacity: 0.3; pointer-events: none; z-index: 0; }
+      .orb-1 { top: -5rem; left: -5rem; background: #ffaa06; }
+      .orb-2 { top: 38%; right: -8rem; background: #e91e63; }
+      .orb-3 { bottom: -7rem; left: 24%; background: #4a148c; }
+      .soft-card { background: #ffffffee; border: 1px solid #f3f4f6; }
     </style>
   </head>
-
   <body class="antialiased">
     <div class="orb orb-1" aria-hidden="true"></div>
     <div class="orb orb-2" aria-hidden="true"></div>
@@ -89,11 +27,7 @@
     <main class="relative z-10 mx-auto max-w-5xl px-6 py-12 lg:py-20">
       <header class="mb-16 text-center lg:text-left">
         <div class="mb-8 flex justify-center lg:justify-start">
-          <img
-            src="assets/perfil.jpg"
-            alt="Ana Clara Amorim Cavalcante"
-            class="h-32 w-32 rounded-full border-4 border-white object-cover shadow-xl"
-          />
+          <img src="assets/perfil.jpg" alt="Ana Clara Amorim Cavalcante" class="h-32 w-32 rounded-full border-4 border-white object-cover shadow-xl" />
         </div>
         <p class="mb-2 text-xs font-bold uppercase tracking-[0.3em] text-gray-500">Portfólio</p>
         <h1 class="mb-6 text-4xl font-bold leading-tight lg:text-6xl">
@@ -101,7 +35,7 @@
           visão estratégica e foco em performance.
         </h1>
         <p class="max-w-2xl text-lg leading-relaxed text-gray-600">
-          Atuação em marketing, design para produção gráfica e automação de processos com IA, entregando consistência visual e eficiência operacional para projetos de alto impacto.
+          Atuação em marketing, design para produção gráfica e automação de processos com IA, entregando consistência visual e eficiência operacional.
         </p>
       </header>
 
@@ -109,13 +43,12 @@
         <h2 class="mb-8 flex items-center text-2xl font-bold">
           <span class="mr-4 h-[2px] w-8 bg-gray-400"></span> Experiência
         </h2>
-
         <div class="space-y-12">
           <article class="soft-card rounded-2xl p-8 shadow-sm transition-shadow hover:shadow-md">
             <h3 class="text-xl font-bold">Marketing &amp; Estratégia — UniEVANGÉLICA</h3>
             <p class="mt-1 text-sm font-semibold uppercase tracking-wider text-gray-500">Setembro 2025 — Atual</p>
             <p class="mt-4 leading-relaxed text-gray-600">
-              Atuação como Auxiliar Administrativo no Marketing, com foco em automação de workflows com <strong>n8n</strong>, análise de heatmaps via <strong>Microsoft Clarity</strong>, gestão de landing pages e criação de relatórios de BI para monitoramento de leads e tomada de decisão.
+              Atuação como Auxiliar Administrativo no Marketing, com foco em análise de comportamental via <strong>Microsoft Clarity</strong>, manutenção de identidade visual institucional, gestão de landing pages e suporte estratégico em campanhas de captação.
             </p>
           </article>
 
@@ -123,24 +56,11 @@
             <h3 class="text-xl font-bold">Design Industrial &amp; Pré-Impressão — Cartonagem Anapolina</h3>
             <p class="mt-1 text-sm font-semibold uppercase tracking-wider text-gray-500">Junho 2023 — Outubro 2024</p>
             <p class="mt-4 leading-relaxed text-gray-600">
-              Responsável pelo setor de artes gráficas para marcas como Phallebeauty, Bio Instinto e Zara. Especialista em aprovação técnica de cartuchos, análise de Pantones, gestão de chapas de alumínio e criação de mockups em papéis Duplex e Triplex.
+              Especialista em pré-impressão e fechamento de arquivos para marcas como Phallebeauty e Bio Instinto. Domínio técnico em Pantones e mockups industriais.
             </p>
-            <a
-              href="assets/fotos-cartonagem-trabalhos-revisoes-arte.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="mt-5 inline-flex items-center border-b-2 border-gray-800 pb-1 text-sm font-bold transition-colors hover:text-gray-500"
-            >
-              Ver produção industrial →
+            <a href="assets/fotos%20cartonagem%20(trabalhos%20e%20revisões%20de%20arte).pdf" target="_blank" class="mt-5 inline-flex items-center border-b-2 border-gray-800 pb-1 text-sm font-bold transition-colors hover:text-gray-500">
+              Visualizar produção industrial →
             </a>
-          </article>
-
-          <article class="soft-card rounded-2xl p-8 shadow-sm transition-shadow hover:shadow-md">
-            <h3 class="text-xl font-bold">Estágio em Design Gráfico — Ponto Criativo</h3>
-            <p class="mt-1 text-sm font-semibold uppercase tracking-wider text-gray-500">Novembro 2024 — Fevereiro 2025</p>
-            <p class="mt-4 leading-relaxed text-gray-600">
-              Foco em personalização e brindes com vetorização para bordado digital, sublimação em diversos materiais, transfer e gravação a laser em metais.
-            </p>
           </article>
         </div>
       </section>
@@ -149,42 +69,41 @@
         <h2 class="mb-8 flex items-center text-2xl font-bold">
           <span class="mr-4 h-[2px] w-8 bg-gray-400"></span> Projetos Selecionados
         </h2>
-
         <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
           <article class="soft-card group rounded-xl p-6">
-            <h3 class="mb-2 text-lg font-bold">Insights UX/UI via Microsoft Clarity</h3>
-            <p class="mb-6 text-sm text-gray-600">Análise comportamental e otimização de conversão para as landing pages dos cursos da UniEVANGÉLICA.</p>
-            <a href="assets/clarity-insights-uxui.pdf" target="_blank" rel="noopener noreferrer" class="text-xs font-bold uppercase tracking-widest text-gray-800 group-hover:underline">Ver documentação →</a>
+            <h3 class="mb-2 text-lg font-bold">Insights UX/UI — Clarity</h3>
+            <p class="mb-6 text-sm text-gray-600">Análise comportamental das landing pages da UniEVANGÉLICA.</p>
+            <a href="assets/Clarity_Pagina_Geral_de_cursos__unievangelica_Insights_UXUI_compressed.pdf" target="_blank" class="text-xs font-bold uppercase tracking-widest text-gray-800 group-hover:underline">Visualizar →</a>
           </article>
 
           <article class="soft-card group rounded-xl p-6">
-            <h3 class="mb-2 text-lg font-bold">Plano de Marketing Digital Integrado</h3>
-            <p class="mb-6 text-sm text-gray-600">Estratégia de marketing 360° desenvolvida para o ecossistema educacional da UniEVANGÉLICA.</p>
-            <a href="assets/plano-marketing-digital-integrado-unievangelica.pdf" target="_blank" rel="noopener noreferrer" class="text-xs font-bold uppercase tracking-widest text-gray-800 group-hover:underline">Ver plano →</a>
+            <h3 class="mb-2 text-lg font-bold">Plano de Marketing 360°</h3>
+            <p class="mb-6 text-sm text-gray-600">Estratégia integrada para o ecossistema educacional.</p>
+            <a href="assets/_Plano_de_Marketing_Digital_100%25_Gratuito_e_Integrado_(UniEVANGÉLICA).pdf" target="_blank" class="text-xs font-bold uppercase tracking-widest text-gray-800 group-hover:underline">Visualizar →</a>
           </article>
 
           <article class="soft-card group rounded-xl p-6">
-            <h3 class="mb-2 text-lg font-bold">Redesign Editorial: A Arte da Guerra</h3>
-            <p class="mb-6 text-sm text-gray-600">Projeto de redesign de capa e mockups com estética moderna e impacto visual.</p>
-            <a href="assets/redesign-arte-da-guerra-capas-mockups.pdf" target="_blank" rel="noopener noreferrer" class="text-xs font-bold uppercase tracking-widest text-gray-800 group-hover:underline">Ver mockups →</a>
+            <h3 class="mb-2 text-lg font-bold">Editorial: A Arte da Guerra</h3>
+            <p class="mb-6 text-sm text-gray-600">Redesign de capa e mockups de alta fidelidade.</p>
+            <a href="assets/Redesign%20Livro%20-%20A%20Arte%20da%20Guerra%20-%20Capas%20e%20Mockups-compactado.pdf" target="_blank" class="text-xs font-bold uppercase tracking-widest text-gray-800 group-hover:underline">Visualizar →</a>
           </article>
 
           <article class="soft-card group rounded-xl p-6">
-            <h3 class="mb-2 text-lg font-bold">Identidade Visual: 4Men Rebranding</h3>
-            <p class="mb-6 text-sm text-gray-600">Desenvolvimento de marca e posicionamento para moda masculina e acessórios.</p>
-            <a href="assets/4men-rebranding.pdf" target="_blank" rel="noopener noreferrer" class="text-xs font-bold uppercase tracking-widest text-gray-800 group-hover:underline">Ver branding →</a>
+            <h3 class="mb-2 text-lg font-bold">Branding: 4Men</h3>
+            <p class="mb-6 text-sm text-gray-600">Identidade visual completa para o mercado de moda masculina.</p>
+            <a href="assets/4men%20rebranding%20trabalho_compressed.pdf" target="_blank" class="text-xs font-bold uppercase tracking-widest text-gray-800 group-hover:underline">Visualizar →</a>
           </article>
 
           <article class="soft-card group rounded-xl p-6">
-            <h3 class="mb-2 text-lg font-bold">Social Media: Carrosséis Estratégicos</h3>
-            <p class="mb-6 text-sm text-gray-600">Conteúdo visual para Engenharia de Software, com foco em engajamento e clareza.</p>
-            <a href="assets/carrosseis-unievangelica-engenharia-software.pdf" target="_blank" rel="noopener noreferrer" class="text-xs font-bold uppercase tracking-widest text-gray-800 group-hover:underline">Ver posts →</a>
+            <h3 class="mb-2 text-lg font-bold">Social Media Estratégico</h3>
+            <p class="mb-6 text-sm text-gray-600">Engenharia de Software: Design focado em conversão.</p>
+            <a href="assets/Post%20Carrosseis%20UniEvangélica%20Engenharia%20de%20Software.pdf" target="_blank" class="text-xs font-bold uppercase tracking-widest text-gray-800 group-hover:underline">Visualizar →</a>
           </article>
 
           <article class="soft-card group rounded-xl p-6">
-            <h3 class="mb-2 text-lg font-bold">Packaging &amp; Personalização</h3>
-            <p class="mb-6 text-sm text-gray-600">Projeto técnico de embalagem personalizada com foco em medidas precisas e arte final.</p>
-            <a href="assets/caixa-bis-personalizada-blackpink.pdf" target="_blank" rel="noopener noreferrer" class="text-xs font-bold uppercase tracking-widest text-gray-800 group-hover:underline">Ver projeto técnico →</a>
+            <h3 class="mb-2 text-lg font-bold">Packaging Personalizado</h3>
+            <p class="mb-6 text-sm text-gray-600">Estudo técnico de embalagem Bis Blackpink.</p>
+            <a href="assets/Caixa%20Bis%20Personalizada%20Blackpink_compressed.pdf" target="_blank" class="text-xs font-bold uppercase tracking-widest text-gray-800 group-hover:underline">Visualizar →</a>
           </article>
         </div>
       </section>
@@ -195,29 +114,27 @@
           <ul class="space-y-4">
             <li>
               <p class="font-bold">Pós-graduação em Inteligência Artificial</p>
-              <p class="text-sm italic text-gray-500">Em curso</p>
+              <p class="text-sm italic text-gray-500 text-purple-600">Desenvolvimento de fluxos n8n e automações</p>
             </li>
             <li>
-              <p class="font-bold">Bacharelado em Design Gráfico</p>
-              <p class="text-sm italic text-gray-500">UniEVANGÉLICA — Diploma disponível</p>
+              <p class="font-bold">Tecnólogo em Design Gráfico</p>
+              <p class="text-sm italic text-gray-500">UniEVANGÉLICA — 
+                <a href="assets/Diploma%20Tecnólogo%20em%20Design%20Gráfico%20-%20Ana%20Clara%20Amorim%20Cavalcante.pdf" target="_blank" class="underline hover:text-gray-800">Visualizar Diploma</a>
+              </p>
             </li>
           </ul>
         </section>
-
         <section>
           <h2 class="mb-6 text-xl font-bold italic">Expertise</h2>
           <div class="flex flex-wrap gap-2">
             <span class="rounded-full border border-gray-100 bg-white px-3 py-1 text-xs font-bold shadow-sm">FIGMA</span>
             <span class="rounded-full border border-gray-100 bg-white px-3 py-1 text-xs font-bold shadow-sm">PHOTOSHOP</span>
             <span class="rounded-full border border-gray-100 bg-white px-3 py-1 text-xs font-bold shadow-sm">ILLUSTRATOR</span>
-            <span class="rounded-full border border-gray-100 bg-white px-3 py-1 text-xs font-bold shadow-sm">INDESIGN</span>
-            <span class="rounded-full border border-gray-100 bg-white px-3 py-1 text-xs font-bold shadow-sm">CORELDRAW</span>
             <span class="rounded-full border border-gray-100 bg-white px-3 py-1 text-xs font-bold shadow-sm">N8N</span>
             <span class="rounded-full border border-gray-100 bg-white px-3 py-1 text-xs font-bold shadow-sm">MICROSOFT CLARITY</span>
           </div>
         </section>
       </footer>
-
       <div class="mt-20 text-center text-xs font-bold uppercase tracking-widest text-gray-400">
         © 2026 Ana Clara Amorim Cavalcante • Anápolis, GO
       </div>
